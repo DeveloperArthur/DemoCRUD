@@ -1,5 +1,8 @@
 <template>
   <div align="center">
+    <br>
+    <h1>CRUD com API REST + Vue.js + Axios + Vuetify</h1>
+    <br>
     <form @submit.prevent="add">
         <input type="hidden" v-model="form.id" id="inputAdd">
         <input type="text" v-model="form.name" id="inputAdd">
@@ -12,6 +15,9 @@
           <v-icon>update</v-icon>
         </v-btn>
     </form>
+    <h3 style="color: red; font-size: 15px">
+      <strong>{{erro}}</strong>
+    </h3>
     <br>
     <table border="1">
         <tr>
@@ -42,7 +48,9 @@ export default {
           name: ''
         },
         users: '',
-        updateSubmit: false
+        updateSubmit: false,
+        erro: '',
+        dialog3: false
     }
   },
   mounted() {
@@ -57,16 +65,21 @@ export default {
         
       })
     },
-      add(){
-      axios.post('http://localhost:3000/users/', this.form).then(res => {
+    add(){
+      if(this.form.name.length == ''){
+        this.erro = "Preencha o nome";
+      }else{
+        this.erro = '';
+        axios.post('http://localhost:3000/users/', this.form).then(res => {
           this.load()
           this.form.name = ''
-      })
+        })
+      }
     },
     edit(user){ 
         this.updateSubmit = true
         this.form.id = user.id 
-        this.form.name = user.name 
+        this.form.name = user.name
     },
     update(form){ 
        return axios.put('http://localhost:3000/users/' + form.id , {name: this.form.name}).then(res => {
@@ -74,17 +87,19 @@ export default {
         this.form.id = ''
         this.form.name = ''
         this.updateSubmit = false
+        alert("Usuário alterado");
       }).catch((err) => {
         console.log(err);
-        
       })
     },
     del(user){
-      axios.delete('http://localhost:3000/users/' + user.id).then(res =>{
+      if(confirm("Tem certeza que deseja deletar este usuário?")){
+        axios.delete('http://localhost:3000/users/' + user.id).then(res =>{
           this.load()
           let index = this.users.indexOf(this.form.name)
           this.users.splice(index,1)
-      })
+        })
+      }
     }
   }
 }
