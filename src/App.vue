@@ -1,17 +1,33 @@
 <template>
-  <div>
+  <div align="center">
     <form @submit.prevent="add">
-        <input type="hidden" v-model="form.id">
-        <input type="text" v-model="form.name">
-        <button type="submit" v-show="!updateSubmit">add</button>  
-        <button type="button" v-show="updateSubmit" @click="update(form)">Update</button> 
+        <input type="hidden" v-model="form.id" id="inputAdd">
+        <input type="text" v-model="form.name" id="inputAdd">
+        <v-btn type="submit" v-show="!updateSubmit">
+          Adicionar
+          <v-icon>add_circle_outline</v-icon>
+        </v-btn>
+        <v-btn v-show="updateSubmit" @click="update(form)">
+          Alterar
+          <v-icon>update</v-icon>
+        </v-btn>
     </form>
-    <ul v-for="user in users" :key="user.idd">
-      <li>
-      <span>{{user.name}}</span> &#160;
-      <button @click="edit(user)">Edit</button> ||  <button @click="del(user)">Delete</button>
-      </li>
-    </ul>
+    <br>
+    <table border="1">
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Aplicações</th>
+        </tr>
+        <tr v-for="user in users" :key="user.idd">
+          <td><span>{{user.id}}</span> &#160;</td>
+          <td><span>{{user.name}}</span> &#160;</td>
+          <td>
+            <v-icon @click="edit(user)">create</v-icon>
+            <v-icon @click="del(user)">delete</v-icon>
+          </td>
+        </tr>
+      </table>
   </div>
 </template>
 
@@ -73,3 +89,31 @@ export default {
   }
 }
 </script>
+
+<style>
+table {
+  width: 70%;
+  font-size: 20px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+input {
+  width: 295px;
+  border: 1px solid black
+}
+#inputAdd {
+  width: 755px;
+  height: 30px;
+  border: 1px solid black
+}
+
+body{
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+*{
+  font-size: 20px;
+}
+</style>
