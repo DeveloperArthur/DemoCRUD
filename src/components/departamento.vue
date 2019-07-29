@@ -7,12 +7,10 @@
         <input type="text" v-model="form.departamento" id="inputAdd" placeholder="Digite o departamento">
         <input type="text" v-model="form.descricao" id="inputAdd" placeholder="Digite a descrição">
         <v-btn type="submit" v-show="!updateSubmit">
-          Adicionar
-          <v-icon>add_circle_outline</v-icon>
+          <v-icon large>add_circle_outline</v-icon>
         </v-btn>
         <v-btn v-show="updateSubmit" @click="update(form)">
-          Alterar
-          <v-icon>update</v-icon>
+          <v-icon large>update</v-icon>
         </v-btn>
     </form>
     <h3 style="color: red; font-size: 15px">
@@ -53,7 +51,8 @@ export default {
         departamentos: '',
         updateSubmit: false,
         erro: '',
-        users: ''
+        users: '',
+        UsuariosVinculados: false
     }
   },
   mounted() {
@@ -106,30 +105,28 @@ export default {
         })
     },
     del(departament){
-        for(var i = 0; i < this.departamentos.length; i++){
-            try{
-                /*em um loop i<departamentos.length, dependendo do
-                 departamento selecionado, o users[i] nao existe, 
-                 exemplo: objeto 0,1,2,3, quando o i era 4 dava erro
-                 e parava o programa, nao conseguia excluir... com 
-                 try catch, o programa tenta entrar no if a cada iteração,
-                 quando dar erro vai mostra no console, sair do laço e cair
-                 no if confirm que é pra deletar*/
-                if(this.users[i].departamento == departament.departamento){
-                    alert('ERRO: Usuarios estao vinculados a este departamento');
-                    return 0;
-                }
-            }catch(e){
-                console.log('Nao existe nenhum usuario cadastrado com este departamento, eh possivel realizar a exclusão! '+e)
-            }
-        }
-        if(confirm("Tem certeza que deseja deletar este usuário?")){
+        this.verificaSeTemUsuariosVinculados(departament);
+        if(this.UsuariosVinculados){
+            alert('ERRO: Usuarios estao vinculados a este departamento');
+        }else if(confirm("Tem certeza que deseja deletar este usuário?")){
             axios.delete('http://localhost:3000/departamentos/' + departament.id).then(res =>{
                 this.load()
                 let index = this.departamentos.indexOf(this.form.name)
                 this.departamentos.splice(index,1)
             })
         }
+    },
+    verificaSeTemUsuariosVinculados(departament){
+        for(var i = 0; i < this.users.length; i++){
+            try{
+                if(this.users[i].departamento == departament.departamento){
+                    return this.UsuariosVinculados = true;
+                }
+            }catch(e){
+                console.log('Nao existe nenhum usuario cadastrado com este departamento, eh possivel realizar a exclusão! '+e)
+            }
+        }
+        return this.UsuariosVinculados = false;
     }
   }
 }

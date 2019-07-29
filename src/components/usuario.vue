@@ -12,12 +12,10 @@
             <option v-for="departamento in departamentos">{{departamento.departamento}}</option>
         </select>
         <v-btn type="submit" v-show="!updateSubmit">
-          Adicionar
-          <v-icon>add_circle_outline</v-icon>
+          <v-icon large>add_circle_outline</v-icon>
         </v-btn>
         <v-btn v-show="updateSubmit" @click="update(form)">
-          Alterar
-          <v-icon>update</v-icon>
+          <v-icon large>update</v-icon>
         </v-btn>
     </form>
     <h3 style="color: red; font-size: 15px">
