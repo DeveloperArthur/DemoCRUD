@@ -1,40 +1,41 @@
 <template>
     <div align="center">
-    <h1>Tela de Departamento</h1>
-    <br>
-    <form @submit.prevent="add">
-        <input type="hidden" v-model="form.id" id="inputAdd">
-        <input type="text" v-model="form.departamento" id="inputAdd" placeholder="Digite o departamento">
-        <input type="text" v-model="form.descricao" id="inputAdd" placeholder="Digite a descrição">
-        <v-btn type="submit" v-show="!updateSubmit">
-          <v-icon large>add_circle_outline</v-icon>
-        </v-btn>
-        <v-btn v-show="updateSubmit" @click="update(form)">
-          <v-icon large>update</v-icon>
-        </v-btn>
-    </form>
-    <h3 style="color: red; font-size: 15px">
-      <strong>{{erro}}</strong>
-    </h3>
-    <br>
-    <table border="1">
-        <tr>
-          <th>ID</th>
-          <th>Departamento</th>
-          <th>Descrição</th>
-          <th>Ações</th>
-        </tr>
-        <tr v-for="departament in departamentos" :key="departament.idd">
-          <td><span>{{departament.id}}</span> &#160;</td>
-          <td><span>{{departament.departamento}}</span> &#160;</td>
-          <td><span>{{departament.descricao}}</span> &#160;</td>
-          <td>
-            <v-icon @click="edit(departament)">create</v-icon>
-            <v-icon @click="del(departament)">delete</v-icon>
-          </td>
-        </tr>
-      </table>
-  </div>
+        <v-icon large>business_center</v-icon>
+        <h1>Tela de Departamento</h1>
+        <br>
+        <form @submit.prevent="add">
+            <input type="hidden" v-model="form.id" id="inputAdd">
+            <input type="text" v-model="form.departamento" id="inputAdd" placeholder="Digite o departamento">
+            <input type="text" v-model="form.descricao" id="inputAdd" placeholder="Digite a descrição">
+            <v-btn type="submit" v-show="!updateSubmit">
+                <v-icon large>add_circle_outline</v-icon>
+            </v-btn>
+            <v-btn v-show="updateSubmit" @click="update(form)">
+                <v-icon large>update</v-icon>
+            </v-btn>
+        </form>
+        <h3 style="color: red; font-size: 15px">
+            <strong>{{erro}}</strong>
+        </h3>
+        <br>
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Departamento</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+            </tr>
+            <tr v-for="departament in departamentos" :key="departament.idd">
+            <td><span>{{departament.id}}</span> &#160;</td>
+            <td><span>{{departament.departamento}}</span> &#160;</td>
+            <td><span>{{departament.descricao}}</span> &#160;</td>
+            <td>
+                <v-icon @click="edit(departament)">create</v-icon>
+                <v-icon @click="del(departament)">delete</v-icon>
+            </td>
+            </tr>
+        </table>
+    </div>
 </template>
 
 <script>

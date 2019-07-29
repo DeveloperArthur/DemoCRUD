@@ -1,5 +1,6 @@
 <template>
     <div align="center">
+    <v-icon large>group</v-icon>
     <h1>Tela de Usuario</h1>
     <br>
     <form @submit.prevent="add">
