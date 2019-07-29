@@ -3,14 +3,14 @@
     {
       "name": "Ayla Emilly dos Santos",
       "data": "1955-08-04",
-      "email": "aylaemillydossantos..aylaemillydossantos@antunez.com.br",
+      "email": "aylaemillydossantos@antunez.com.br",
       "departamento": "Administrador",
       "id": 1
     },
     {
       "name": "Beatriz Alana Assis",
       "data": "1985-02-02",
-      "email": "beatrizalanaassis..beatrizalanaassis@danielstrauch.com",
+      "email": "beatrizalanaassis@danielstrauch.com",
       "departamento": "Atacado",
       "id": 2
     },
@@ -24,7 +24,7 @@
     {
       "name": "Isabel Amanda Malu da Mata",
       "data": "1951-05-19",
-      "email": "isabelamandamaludamata..isabelamandamaludamata@sercoti.com.br",
+      "email": "isabelamandamaludamata@sercoti.com.br",
       "departamento": "Logística",
       "id": 4
     },
@@ -66,7 +66,7 @@
     {
       "name": "Luiz Paulo Bento da Cruz",
       "data": "1993-07-07",
-      "email": "luizpaulobentodacruz..luizpaulobentodacruz@w3ag.com",
+      "email": "luizpaulobentodacruz@w3ag.com",
       "departamento": "Vendas",
       "id": 10
     },
@@ -87,14 +87,14 @@
     {
       "name": "Iago Henry Benedito Mendes",
       "data": "1949-12-14",
-      "email": "iagohenrybeneditomendes..iagohenrybeneditomendes@valeguinchos.com.br",
+      "email": "iagohenrybeneditomendes@valeguinchos.com.br",
       "departamento": "Marketing",
       "id": 13
     },
     {
       "name": "Fátima Andrea Camila dos Santos",
       "data": "1983-01-20",
-      "email": "fatimaandreacamiladossantos__fatimaandreacamiladossantos@bodyfast.com.br",
+      "email": "fatimaandreacamiladossantos@bodyfast.com.br",
       "departamento": "Marketing",
       "id": 14
     },
@@ -108,9 +108,16 @@
     {
       "name": "Stella Marlene Farias",
       "data": "1981-02-16",
-      "email": "stellamarlenefarias__stellamarlenefarias@credendio.com.br",
+      "email": "stellamarlenefarias@credendio.com.br",
       "departamento": "TI – Tecnologia da Informação",
       "id": 16
+    },
+    {
+      "id": 17,
+      "name": "Arthur dos Santos Almeida",
+      "data": "1998-11-22",
+      "email": "santosalmeida.arthur@gmail.com",
+      "departamento": "TI – Tecnologia da Informação"
     }
   ],
   "departamentos": [
