@@ -31,7 +31,7 @@
           <th>Data de cadastro</th>
           <th>Email</th>
           <th>Departamento</th>
-          <th>Aplicações</th>
+          <th>Ações</th>
         </tr>
         <tr v-for="user in users" :key="user.idd">
           <td><span>{{user.id}}</span> &#160;</td>

@@ -24,7 +24,7 @@
           <th>ID</th>
           <th>Departamento</th>
           <th>Descrição</th>
-          <th>Aplicações</th>
+          <th>Ações</th>
         </tr>
         <tr v-for="departament in departamentos" :key="departament.idd">
           <td><span>{{departament.id}}</span> &#160;</td>
@@ -107,13 +107,21 @@ export default {
     },
     del(departament){
         for(var i = 0; i < this.departamentos.length; i++){
-            if(this.users[i].departamento == departament.departamento){
-                alert('ERRO: Usuarios estao vinculados a este departamento');
-                return 0;
+            try{
+                /*em um loop i<departamentos.length, dependendo do
+                 departamento selecionado, o users[i] nao existe, 
+                 exemplo: objeto 0,1,2,3, quando o i era 4 dava erro
+                 e parava o programa, nao conseguia excluir... com 
+                 try catch, o programa tenta entrar no if a cada iteração,
+                 quando dar erro vai mostra no console, sair do laço e cair
+                 no if confirm que é pra deletar*/
+                if(this.users[i].departamento == departament.departamento){
+                    alert('ERRO: Usuarios estao vinculados a este departamento');
+                    return 0;
+                }
+            }catch(e){
+                console.log('Nao existe nenhum usuario cadastrado com este departamento, eh possivel realizar a exclusão! '+e)
             }
-            /*
-            quando o departamento nao esta vinculado da erro
-            */
         }
         if(confirm("Tem certeza que deseja deletar este usuário?")){
             axios.delete('http://localhost:3000/departamentos/' + departament.id).then(res =>{
