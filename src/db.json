@@ -1,223 +1,208 @@
 {
   "users": [
     {
-      "id": 1,
       "name": "Ayla Emilly dos Santos",
       "data": "1955-08-04",
       "email": "aylaemillydossantos..aylaemillydossantos@antunez.com.br",
-      "departamento": "Renata e Simone Pizzaria Delivery ME"
+      "departamento": "Administrador",
+      "id": 1
     },
     {
-      "id": 2,
       "name": "Beatriz Alana Assis",
       "data": "1985-02-02",
       "email": "beatrizalanaassis..beatrizalanaassis@danielstrauch.com",
-      "departamento": "Erick e Danilo Marcenaria Ltda"
+      "departamento": "Atacado",
+      "id": 2
     },
     {
-      "id": 3,
       "name": "Otávio Ian Mário Novaes",
       "data": "1964-09-08",
       "email": "otavioianmarionovaes_@hotmail.co.uk",
-      "departamento": "Filipe e Augusto Casa Noturna ME"
+      "departamento": "Atendimento ao cliente",
+      "id": 3
     },
     {
-      "id": 4,
       "name": "Isabel Amanda Malu da Mata",
       "data": "1951-05-19",
       "email": "isabelamandamaludamata..isabelamandamaludamata@sercoti.com.br",
-      "departamento": "Eliane e Bryan Informática Ltda"
+      "departamento": "Logística",
+      "id": 4
     },
     {
-      "id": 5,
       "name": "Fernando Pedro Viana",
       "data": "1994-07-14",
       "email": "fernandopedroviana_@vegacon.com.br",
-      "departamento": "Luan e Eloá Eletrônica Ltda"
+      "departamento": "Recursos Humanos",
+      "id": 5
     },
     {
-      "id": 6,
       "name": "Joaquim Fábio Barbosa",
       "data": "1958-02-10",
       "email": "jjoaquimfabiobarbosa@51hotmail.com",
-      "departamento": "Gabriel e Aparecida Marcenaria ME"
+      "departamento": "TI – Tecnologia da Informação",
+      "id": 6
     },
     {
-      "id": 7,
       "name": "Rafael André Moraes",
       "data": "1989-02-15",
       "email": "rrafaelandremoraes@limao.com.br",
-      "departamento": "Teresinha e Luís Pães e Doces Ltda"
+      "departamento": "Manutenção",
+      "id": 7
     },
     {
-      "id": 8,
       "name": "Carlos Eduardo Raul Enrico Pinto",
       "data": "1946-09-06",
       "email": "ccarloseduardoraulenricopinto@modus.com.br",
-      "departamento": "Erick e Danilo Marcenaria Ltda"
+      "departamento": "Auditoria",
+      "id": 8
     },
     {
-      "id": 9,
       "name": "Sueli Alice Aline Galvão",
       "data": "1944-07-12",
       "email": "suelialicealinegalvao_@anac.gov.br",
-      "departamento": "Filipe e Augusto Casa Noturna ME"
+      "departamento": "Comercial",
+      "id": 9
     },
     {
-      "id": 10,
       "name": "Luiz Paulo Bento da Cruz",
       "data": "1993-07-07",
       "email": "luizpaulobentodacruz..luizpaulobentodacruz@w3ag.com",
-      "departamento": "Renata e Simone Pizzaria Delivery ME"
+      "departamento": "Vendas",
+      "id": 10
     },
     {
-      "id": 11,
       "name": "Márcio Joaquim Enrico Ferreira",
       "data": "1998-06-06",
       "email": "marciojoaquimenricoferreira-91@omnibrasil.com.br",
-      "departamento": "Oliver e José Esportes ME"
+      "departamento": "Controladoria",
+      "id": 11
     },
     {
-      "id": 12,
       "name": "José Manoel Moraes",
       "data": "1955-11-03",
       "email": "josemanoelmoraes_@kuehne-nagel.com",
-      "departamento": "Débora e Elias Doces & Salgados Ltda"
+      "departamento": "Financeiro",
+      "id": 12
     },
     {
-      "id": 13,
       "name": "Iago Henry Benedito Mendes",
       "data": "1949-12-14",
       "email": "iagohenrybeneditomendes..iagohenrybeneditomendes@valeguinchos.com.br",
-      "departamento": "Débora e Elias Doces & Salgados Ltda"
+      "departamento": "Marketing",
+      "id": 13
     },
     {
-      "id": 14,
       "name": "Fátima Andrea Camila dos Santos",
       "data": "1983-01-20",
       "email": "fatimaandreacamiladossantos__fatimaandreacamiladossantos@bodyfast.com.br",
-      "departamento": "Oliver e José Esportes ME"
+      "departamento": "Marketing",
+      "id": 14
     },
     {
-      "id": 15,
       "name": "Letícia Rafaela Alice Gomes",
       "data": "2001-09-03",
       "email": "leticiarafaelaalicegomes_@uol.com.br",
-      "departamento": "Luan e Eloá Eletrônica Ltda"
+      "departamento": "Vendas",
+      "id": 15
     },
     {
-      "id": 16,
       "name": "Stella Marlene Farias",
       "data": "1981-02-16",
       "email": "stellamarlenefarias__stellamarlenefarias@credendio.com.br",
-      "departamento": "Renata e Simone Pizzaria Delivery ME"
+      "departamento": "TI – Tecnologia da Informação",
+      "id": 16
     }
   ],
   "departamentos": [
     {
-      "id": 1,
-      "departamento": "Teresinha e Luís Pães e Doces Ltda",
-      "descricao": "www.teresinhaeluispaesedocesltda.com.br"
+      "departamento": "Administrador",
+      "descricao": "responsável pelo planejamento estratégico e pela gestão de pessoal e atividades que fazem o negócio acontecer",
+      "id": 1
     },
     {
-      "id": 2,
-      "departamento": "Marcos e Regina Entulhos ME",
-      "descricao": "www.marcosereginaentulhosme.com.br"
+      "departamento": "Atacado",
+      "descricao": "tipo de comércio cujo público-alvo são outras empresas ou instituições",
+      "id": 4
     },
     {
-      "id": 3,
-      "departamento": "Nina e Thiago Financeira Ltda",
-      "descricao": "www.ninaethiagofinanceiraltda.com.br"
+      "departamento": "Atendimento ao cliente",
+      "descricao": "modo de oferecer suporte para sua clientela. Este processo pode ocorrer durante a compra ou então após, garantindo uma boa experiência de compra.",
+      "id": 6
     },
     {
-      "id": 4,
-      "departamento": "Erick e Danilo Marcenaria Ltda",
-      "descricao": "www.erickedanilomarcenarialtda.com.br"
+      "departamento": "Auditoria",
+      "descricao": "conjunto de ações usadas para assessorar e prestar consultoria para a organização. Os procedimentos são verificados através de controles internos (ou externos) que dão margem para o auditor opinar e aconselhar visando a melhoria da empresa.",
+      "id": 7
     },
     {
-      "id": 5,
-      "departamento": "Nelson e Gabriel Mudanças Ltda",
-      "descricao": "www.nelsonegabrielmudancasltda.com.br"
+      "departamento": "Comercial",
+      "descricao": "responsável por coordenar as atividades de venda dos produtos ou serviços da empresa. É a partir dele que as empresas obtêm lucro e recursos financeiros para que possa crescer e sobreviver economicamente. O Departamento de Marketing é responsável pela venda de forma indireta.",
+      "id": 9
     },
     {
-      "id": 6,
-      "departamento": "Filipe e Augusto Casa Noturna ME",
-      "descricao": "www.filipeeaugustocasanoturname.com.br"
+      "departamento": "Comunicação",
+      "descricao": "responsável por fazer com que os públicos interno e externo da empresa recebam informações relevantes sobre seu trabalho. Cada setor de uma empresa tem sua parcela de importância na construção e manutenção de um negócio",
+      "id": 11
     },
     {
-      "id": 7,
-      "departamento": "Gabriel e Aparecida Marcenaria ME",
-      "descricao": "www.gabrieleaparecidamarcenariame.com.br"
+      "departamento": "Contabilidade",
+      "descricao": "Ferramenta de fundamental importância para o controle de um empreendimento. Por meio dela é possível extrair uma série de informações importantes para a tomada de decisão, para controlar e acompanhar as operações, além de facilitar o planejamento como um todo.",
+      "id": 12
     },
     {
-      "id": 8,
-      "departamento": "Teresinha e Larissa Consultoria Financeira ME",
-      "descricao": "www.teresinhaelarissaconsultoriafinanceirame.com.br"
+      "departamento": "Controladoria",
+      "descricao": "departamento que tem função de controle. ... Ele precisa ter um bom domínio das áreas de contabilidade, economia e administração.Também é preciso que o controller conheça bem o funcionamento e os objetivos da empresa para poder dar a melhor informação para os gestores.",
+      "id": 14
     },
     {
-      "id": 9,
-      "departamento": "Luan e Eloá Eletrônica Ltda",
-      "descricao": "www.luaneeloaeletronicaltda.com.br"
+      "departamento": "Crédito",
+      "descricao": "tem como objetivo estudar a possibilidade de conceder crédito a uma pessoa física ou jurídica, avaliando a veracidade das informações prestadas pela mesma, e suas condições de honrar os compromissos financeiros.",
+      "id": 21
     },
     {
-      "id": 10,
-      "departamento": "Thales e Gustavo Marcenaria ME",
-      "descricao": "www.thalesegustavomarcenariame.com.br"
+      "id": 22,
+      "departamento": "Financeiro\t",
+      "descricao": "departamento financeiro estão a tesouraria, o controle das contas a pagar e a receber, a contabilidade, o planejamento, a gestão dos impostos, o controle de riscos e a divulgação de informações para os investidores."
     },
     {
-      "id": 11,
-      "departamento": "Renata e Simone Pizzaria Delivery ME",
-      "descricao": "www.renataesimonepizzariadeliveryme.com.br"
+      "id": 23,
+      "departamento": "Logística",
+      "descricao": "consiste em planejar a movimentação de recursos para que a empresa possa funcionar bem. Em outra palavras, a Logística é a área responsável pelo Transporte e armazenamento de mercadorias para as empresas."
     },
     {
-      "id": 12,
-      "departamento": "Eliane e Bryan Informática Ltda",
-      "descricao": "www.elianeebryaninformaticaltda.com.br"
+      "id": 24,
+      "departamento": "Manutenção",
+      "descricao": "processo de supervisionar o funcionamento regular dos recursos técnicos."
     },
     {
-      "id": 13,
-      "departamento": "Kaique e Nicole Vidros ME",
-      "descricao": "www.kaiqueenicolevidrosme.com.br"
+      "id": 25,
+      "departamento": "Marketing",
+      "descricao": "usar seus conhecimentos para aumentar as vendas de uma marca ou uma empresa. Ele é o responsável por criar estratégias que tornarão um produto ou um serviço mais atraente para o seu público-alvo, isso de uma maneira inteligente para atrair e não repelir os consumidores."
     },
     {
-      "id": 14,
-      "departamento": "Débora e Elias Doces & Salgados Ltda",
-      "descricao": "www.deboraeeliasdocessalgadosltda.com.br"
+      "id": 26,
+      "departamento": "Pesquisa e Desenvolvimento",
+      "descricao": "compostos por profissionais de alto nível técnico capazes de teorizar produtos comercializáveis e que possam trazer benefícios ao consumidor final. Para essa tarefa, as fontes podem ser variadas, inclusive até mesmo com participações externas."
     },
     {
-      "id": 15,
-      "departamento": "Márcio e Adriana Fotografias ME",
-      "descricao": "www.marcioeadrianafotografiasme.com.br"
+      "departamento": "Processos",
+      "descricao": "pode auxiliar uma empresa em qualquer fase de sua existência e independente de seu porte, pois todas são nada menos que uma coleção de processos. Existem processos para pagar as contas, receber os insumos, contratar funcionários, criar um produto, prestar um serviço, enfim tudo o que fazemos na empresa é um processo.",
+      "id": 27
     },
     {
-      "id": 16,
-      "departamento": "Aparecida e Augusto Buffet Ltda",
-      "descricao": "www.aparecidaeaugustobuffetltda.com.br"
+      "id": 28,
+      "departamento": "Recursos Humanos",
+      "descricao": "responsabilidade de realizar muitas atividades, entre elas: recrutamento e seleção de colaboradores, treinamento e desenvolvimento, cargos e salários, comunicação interna, atração e retenção de talentos, segurança do trabalho, saúde ocupacional, rotinas de departamento pessoal, gestão da cultura"
     },
     {
-      "id": 17,
-      "departamento": "Oliver e Alexandre Financeira Ltda",
-      "descricao": "www.oliverealexandrefinanceiraltda.com.br"
+      "id": 29,
+      "departamento": "TI – Tecnologia da Informação",
+      "descricao": "conjunto de todas as atividades e soluções providas por recursos de computação que visam a produção, o armazenamento, a transmissão, o acesso, a segurança e o uso das informações."
     },
     {
-      "id": 18,
-      "departamento": "Bento e Samuel Locações de Automóveis ME",
-      "descricao": "www.bentoesamuellocacoesdeautomoveisme.com.br"
-    },
-    {
-      "id": 19,
-      "departamento": "Leonardo e Breno Publicidade e Propaganda Ltda",
-      "descricao": "www.leonardoebrenopublicidadeepropagandaltda.com.br"
-    },
-    {
-      "id": 20,
-      "departamento": "Vitória e Clara Restaurante ME",
-      "descricao": "www.vitoriaeclararestauranteme.com.br"
-    },
-    {
-      "id": 21,
-      "departamento": "Oliver e José Esportes ME",
-      "descricao": "www.oliverejoseesportesme.com.br"
+      "id": 30,
+      "departamento": "Vendas",
+      "descricao": "O vendedor funciona como uma ligação da organização com o seu cliente. Para muitos clientes o vendedor é a organização, por essa razão deve ser dado importância a estruturação da força de vendas, assim como, objetivos e estratégias bem traçadas. "
     }
   ]
 }
