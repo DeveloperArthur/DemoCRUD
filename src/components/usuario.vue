@@ -9,7 +9,7 @@
         <input type="date" v-model="form.data" id="inputAdd" style="width:177px; height:34px;">
         <input type="email" v-model="form.email" id="inputAdd" placeholder="Digite o email" style="width:200px; height:34px;">
         <select v-model="form.departamento" style="width:177px; height:34px;">
-            <option value="">Departamento</option>
+            <option value="">Departamento▼</option>
             <option v-for="departamento in departamentos">{{departamento.departamento}}</option>
         </select>
         <v-btn type="submit" v-show="!updateSubmit">

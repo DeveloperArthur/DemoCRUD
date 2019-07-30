@@ -73,16 +73,22 @@ export default {
         })
     },
     add(){
-      if(this.form.descricao.length == '' || this.form.descricao.length == ''){
-        this.erro = "Preencha todos os campos";
-      }else{
-        this.erro = '';
-        axios.post('http://localhost:3000/departamentos/', this.form).then(res => {
-          this.load()
-          this.form.departamento = ''
-          this.form.descricao = ''
-        })
-      }
+        for(var i=0; i<this.departamentos.length;i++){
+            if(this.form.departamento == this.departamentos[i].departamento){
+                alert('Este departamento já existe');
+                return 0;
+            }
+        }
+        if(this.form.departamento.length == '' || this.form.descricao.length == ''){
+            this.erro = "Preencha todos os campos";
+        }else{
+            this.erro = '';
+            axios.post('http://localhost:3000/departamentos/', this.form).then(res => {
+            this.load()
+            this.form.departamento = ''
+            this.form.descricao = ''
+            })
+        }
     },
     edit(departament){ 
         this.updateSubmit = true
@@ -100,7 +106,7 @@ export default {
             this.form.departamento = ''
             this.form.descricao = ''
             this.updateSubmit = false
-            alert("Usuário alterado");
+            alert("Departamento alterado");
         }).catch((err) => {
             console.log(err);
         })
